@@ -1,0 +1,38 @@
+{
+  "name": "travis-test",
+  "version": "1.0.0",
+  "description": "To test the travis CI setup",
+  "main": "index.js",
+  "scripts": {
+    "generate-index": "babel-node src/generateIndex.js",
+    "lint": "npm run lint-scripts && npm run lint-plugins && npm run lint-index",
+    "lint-index": "babel-node src/lintIndex.js",
+    "lint-plugins": "babel-node src/lintPlugins",
+    "lint-scripts": "eslint .",
+    "test": "echo \"Error: no test specified\""
+  },
+  "dependencies": {
+    "fs-extra": "^8.0.1",
+    "log4js": "^4.3.1",
+    "moment": "^2.24.0",
+    "semver": "^6.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^5.16.0",
+    "husky": "^2.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gomsOrg/Node.git"
+  },
+  "author": "a-gomathi@hcl.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gomsOrg/Node/issues"
+  },
+  "homepage": "https://github.com/gomsOrg/Node#readme"
+}
