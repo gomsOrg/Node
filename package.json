@@ -9,7 +9,7 @@
     "lint-index": "babel-node src/lintIndex.js",
     "lint-plugins": "babel-node src/lintPlugins",
     "lint-scripts": "eslint .",
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"no test specified\""
   },
   "dependencies": {
     "fs-extra": "^8.0.1",
