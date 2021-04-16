@@ -1,5 +1,5 @@
 {
   "hooks": {
-    "pre-commit": "node index.js"
+    "pre-commit": "npm run generate-index"
   }
 }
